@@ -15,6 +15,7 @@ h1, h2, h3, h4, h4, h6 {
 
 .green-text {
   color: var(--green-color);
+  font-weight: 500;
 }
 
 html {
@@ -30,17 +31,16 @@ body {
 }
 
 body header {
-  height: 750px;
-  min-width: 1200px;
+  height: 80vh;
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
   background-color: white;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px 650px;
-      grid-template-rows: 100px 650px;
-  -ms-grid-columns: 1fr 500px 500px 1fr;
-      grid-template-columns: 1fr 500px 500px 1fr;
+  -ms-grid-rows: 15vh 65vh;
+      grid-template-rows: 15vh 65vh;
+  -ms-grid-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 40vw 40vw 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,7 +61,7 @@ body header img {
   grid-row: 2;
   -ms-grid-column: 2;
   grid-column: 2;
-  height: 250px;
+  height: 25vh;
   -webkit-filter: drop-shadow(0 0 50px gray);
           filter: drop-shadow(0 0 50px gray);
   -webkit-user-select: none;
@@ -76,7 +76,7 @@ body header .motto {
   -ms-grid-column: 3;
   grid-column: 3;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 8vh;
 }
 
 body main {
@@ -84,7 +84,7 @@ body main {
 }
 
 body main nav {
-  height: 13vw;
+  height: 25vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,5 +319,191 @@ body footer .contact-container .contact {
   background-color: white;
   border-radius: .2vw;
   padding: .2vw;
+}
+
+@media screen and (max-width: 768px) {
+  body header {
+    height: 65vh;
+    -ms-grid-rows: 15vh 20vh 30vh;
+        grid-template-rows: 15vh 20vh 30vh;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+  }
+  body header h1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body header img {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    max-height: 90%;
+    max-width: 90%;
+  }
+  body header .motto {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    font-size: 6vw;
+    text-align: center;
+  }
+  body main nav {
+    height: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main nav a h3 {
+    font-size: 4vw;
+  }
+  body main section h2 {
+    font-size: 6vw;
+  }
+  body main section#présentation {
+    -ms-grid-rows: 15vw 20vw 20vw 2vw 35vw 2vw 35vw 2vw 15vw;
+        grid-template-rows: 15vw 20vw 20vw 2vw 35vw 2vw 35vw 2vw 15vw;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    justify-items: center;
+  }
+  body main section#présentation p,
+  body main section#présentation div {
+    font-size: 3vw;
+    width: 90vw;
+    text-align: justify;
+  }
+  body main section#présentation p h3,
+  body main section#présentation div h3 {
+    font-size: 3vw;
+  }
+  body main section#présentation p ul,
+  body main section#présentation div ul {
+    font-size: 1vw;
+  }
+  body main section#présentation p.text1,
+  body main section#présentation div.text1 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body main section#présentation p.text2,
+  body main section#présentation div.text2 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body main section#présentation p.text3,
+  body main section#présentation div.text3 {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body main section#présentation p.text3 h3,
+  body main section#présentation div.text3 h3 {
+    text-align: left;
+  }
+  body main section#présentation p.text3 ul,
+  body main section#présentation div.text3 ul {
+    font-size: 2vw;
+  }
+  body main section#présentation p.text4,
+  body main section#présentation div.text4 {
+    -ms-grid-row: 9;
+    grid-row: 9;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  body main section#présentation p.text4 h3,
+  body main section#présentation div.text4 h3 {
+    text-align: left;
+  }
+  body main section#présentation p.text4 ul,
+  body main section#présentation div.text4 ul {
+    font-size: 2vw;
+  }
+  body main section#présentation .images {
+    width: 80%;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main section#présentation .images img {
+    margin: 1vw 2vw;
+    max-width: 15vw;
+    max-height: none;
+  }
+  body main section#téléchargement {
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section#téléchargement article h3 {
+    font-size: 3vw;
+    text-align: center;
+  }
+  body main section#téléchargement article ul {
+    font-size: 2vw;
+  }
+  body footer {
+    width: 100%;
+    height: 45vw;
+    padding: 1vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body footer .name-container {
+    border-radius: 1vw;
+    height: 10vw;
+    width: 80vw;
+  }
+  body footer .name-container h2 {
+    font-size: 8vw;
+  }
+  body footer .contact-container {
+    max-width: 81.6vw;
+  }
+  body footer .contact-container .contact {
+    font-size: 2vw;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
