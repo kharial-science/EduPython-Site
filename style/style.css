@@ -242,6 +242,7 @@ body main section#présentation .images {
 }
 
 body main section#présentation .images a {
+  cursor: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,18 +254,19 @@ body main section#présentation .images a {
           justify-content: center;
 }
 
-body main section#présentation .images a:hover img {
-  -webkit-filter: drop-shadow(0 0 12px gray);
-          filter: drop-shadow(0 0 12px gray);
-}
-
 body main section#présentation .images img {
   max-width: 70%;
   max-height: 70%;
+  cursor: pointer;
   -webkit-transition: -webkit-filter .15s;
   transition: -webkit-filter .15s;
   transition: filter .15s;
   transition: filter .15s, -webkit-filter .15s;
+}
+
+body main section#présentation .images img:hover {
+  -webkit-filter: drop-shadow(0 0 12px gray);
+          filter: drop-shadow(0 0 12px gray);
 }
 
 body main section#books {

@@ -177,22 +177,22 @@ body {
           align-content: center;
 
           a {
+            cursor: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-
-            &:hover {
-              img {
-                filter: drop-shadow(0 0 12px gray);
-              }
-            }
           }
 
           img {
             max-width: 70%;
             max-height: 70%;
 
+            cursor: pointer;
             transition: filter .15s;
+
+            &:hover {
+              filter: drop-shadow(0 0 12px gray);
+            }
           }
         }
       }
