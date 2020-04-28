@@ -267,8 +267,69 @@ body main section#présentation .images img {
   transition: filter .15s, -webkit-filter .15s;
 }
 
+body main section#books {
+  padding: 3vw 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main section#books .title-container {
+  width: 30%;
+  margin-left: 2vw;
+}
+
+body main section#books .title-container h2 {
+  margin-top: 0;
+  color: white;
+  text-align: left;
+  margin-left: 0;
+}
+
+body main section#books .title-container h3 {
+  text-align: left;
+  color: #969696;
+  font-weight: 400;
+  margin-left: .3vw;
+  font-size: 2vw;
+}
+
+body main section#books .image-container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main section#books .image-container a {
+  height: 15vw;
+}
+
+body main section#books .image-container a img {
+  height: 15vw;
+}
+
 body main section#téléchargement {
-  margin-top: 5vw;
   padding-bottom: 5vw;
 }
 
@@ -454,7 +515,6 @@ body footer .contact-container .contact {
     max-height: none;
   }
   body main section#téléchargement {
-    margin-top: 5vw;
     padding-bottom: 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
